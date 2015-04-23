@@ -1,0 +1,20 @@
+[
+	{
+	 "index": 0,
+	 "title": "Imagem 1",
+	 "description": "Descricao 1",
+	 "url": "images/image1.jpeg"
+	},
+	{
+	 "index": 1,
+	 "title": "Imagem 2",
+	 "description": "Descricao 2",
+	 "url": "images/service.jpg"
+	},
+	{
+	 "index": 2,
+	 "title": "Imagem 3",
+	 "description": "Descricao 3",
+	 "url": "images/portfolio.jpg"
+	}
+]

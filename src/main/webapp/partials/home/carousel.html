@@ -1,0 +1,21 @@
+<div class="jumbotron slider">
+	<div id="carousel-example-generic" class="carousel slide"
+		data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-example-generic"
+				ng-repeat="banner in banners" data-slide-to="{{banner.index}}"
+				ng-class="bannerAtivo(banner)"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="item" ng-repeat="banner in banners"
+				ng-class="bannerAtivo(banner)">
+				<img src="{{banner.url}}">
+				<div class="carousel-caption">
+					<h2 class="text-right">{{banner.title}}</h2>
+					<p class="text-right">{{banner.description}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

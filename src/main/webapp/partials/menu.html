@@ -1,0 +1,26 @@
+<div class="navbar navbar-default navbar-fixed-top menu">
+	<div class="container">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#home"><img src="images/logo.png"></a> <a type="button"
+				class="navbar-toggle" data-toggle="collapse"
+				data-target=".navbar-collapse"></a> <span class="sr-only">Toggle
+				navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</div>
+		<div class="collapse navbar-collapse navbar-ex1-collapse" ng-controller="BaseCtrl">
+		
+			<ul class="nav navbar-nav navbar-left">
+				<li ng-class="languageStyle('pt_br')"><a ng-click="languageChange('pt_br')"><img src="images/pt-br.png"></a></li>
+				<li ng-class="languageStyle('en')"><a ng-click="languageChange('en')"><img src="images/en.png"></a></li>
+				<li ng-class="languageStyle('es_ES')"><a ng-click="languageChange('es_ES')"><img src="images/es.png"></a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li ng-class="menuStyle('/home')" ><a href="#home" translate>menu.home</a></li>
+				<li ng-class="menuStyle('/about')"><a href="#about" translate>menu.about</a></li>
+				<li ng-class="menuStyle('/service')"><a href="#service" translate>menu.service</a></li>
+				<li ng-class="menuStyle('/portfolio')"><a href="#portfolio" translate>menu.portfolio</a></li>
+				<li ng-class="menuStyle('/contact')"><a href="#contact" translate>menu.contact</a></li>
+			</ul>
+		</div>
+	</div>
+</div>

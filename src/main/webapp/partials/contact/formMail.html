@@ -1,0 +1,63 @@
+<form class="bv-form" name="sentMessage" id="contactForm"
+	novalidate="novalidate">
+	<button style="display: none; width: 0px; height: 0px;"
+		class="bv-hidden-submit" type="submit"></button>
+	<legend>GET IN TOUCH</legend>
+	<div id="success"></div>
+	<!-- For success/fail messages -->
+	<div class="form-group has-feedback has-error">
+		<div class="controls">
+			<input data-bv-field="name" class="form-control" placeholder="Name"
+				id="name" name="name" type="text"><i title=""
+				data-original-title="" data-bv-icon-for="name"
+				class="form-control-feedback bv-no-label icon-warning3"
+				style="cursor: pointer;"></i>
+			<p class="help-block"></p>
+		</div>
+		<small data-bv-result="INVALID" data-bv-for="name"
+			data-bv-validator="notEmpty" class="help-block"
+			style="display: none;">Name is required and can't be empty</small><small
+			data-bv-result="VALID" data-bv-for="name" data-bv-validator="regexp"
+			class="help-block" style="display: none;">Name can only
+			consist of alphabetical, number, dot and underscore</small>
+	</div>
+
+	<div class="form-group has-feedback has-error">
+		<div class="controls">
+			<input data-bv-field="email" class="form-control" placeholder="Email"
+				id="email" name="email" type="email"><i title=""
+				data-original-title="" data-bv-icon-for="email"
+				class="form-control-feedback bv-no-label icon-warning3"
+				style="cursor: pointer;"></i>
+		</div>
+		<small data-bv-result="INVALID" data-bv-for="email"
+			data-bv-validator="notEmpty" class="help-block"
+			style="display: none;">The email address is required and
+			can't be empty</small><small data-bv-result="VALID" data-bv-for="email"
+			data-bv-validator="emailAddress" class="help-block"
+			style="display: none;">The input is not a valid email address</small>
+	</div>
+
+	<div class="form-group has-feedback has-error">
+		<div class="controls">
+			<textarea data-bv-field="message" rows="10" cols="100"
+				class="form-control" id="message" name="message"
+				style="resize: none"></textarea>
+			<i title="" data-original-title="" data-bv-icon-for="message"
+				class="form-control-feedback bv-no-label icon-warning3"
+				style="cursor: pointer;"></i>
+		</div>
+		<small data-bv-result="INVALID" data-bv-for="message"
+			data-bv-validator="notEmpty" class="help-block"
+			style="display: none;">Message is required and can't be empty</small><small
+			data-bv-result="VALID" data-bv-for="message"
+			data-bv-validator="stringLength" class="help-block"
+			style="display: none;">Message must be more than 6 characters
+			long</small>
+	</div>
+
+	<div class="text-right">
+		<button type="reset" class="btn btn-danger">RESET</button>
+		<button type="submit" class="btn btn-primary">SEND</button>
+	</div>
+</form>
